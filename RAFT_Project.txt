@@ -1,0 +1,40 @@
+RAFT_Project/
+│
+├── core/                           # (SHARED) The Mathematical Brain
+│   ├── __init__.py                 # Makes the folder importable (empty file)
+│   └── model_definition.py         # The shared RAFT PyTorch blueprint
+│
+├── crypto_experiment/              # (YOUR JOB) The Financial Domain
+│   ├── data/
+│   │   └── crypto_raw.csv          # The Kaggle Bitcoin minute dataset
+│   ├── data_processed/             # (Auto-generated when you run data_prep.py)
+│   │   ├── crypto_faiss.index      # Your Crypto Memory Bank
+│   │   ├── crypto_scaler.pkl       
+│   │   └── ... (.npy and .pkl files)
+│   ├── saved_models/               # (Auto-generated when you run run_training.py)
+│   │   └── crypto_raft_model.pth   # Your trained PyTorch weights
+│   ├── data_prep.py                # Script to build your memory bank
+│   ├── run_training.py             # Script to train your model
+│   ├── create_baseline.py          # Script to train the dumb baseline
+│   └── backend_api.py              # NEW: Fetches Binance API & runs your model
+│
+├── river_experiment/               # (YOUR FRIEND'S JOB) The Physical Domain
+│   ├── data/
+│   │   └── river_raw.txt           # The USGS Colorado River text dataset
+│   ├── data_processed/             # (Auto-generated when they run data_prep.py)
+│   │   ├── river_faiss.index       # Their River Memory Bank
+│   │   ├── river_scaler.pkl        
+│   │   └── ... (.npy and .pkl files)
+│   ├── saved_models/               # (Auto-generated when they run run_training.py)
+│   │   └── river_raft_model.pth    # Their trained PyTorch weights
+│   ├── data_prep.py                # Script to build their memory bank
+│   ├── run_training.py             # Script to train their model
+│   ├── create_baseline.py          # Script to train their dumb baseline
+│   └── backend_api.py              # NEW: Fetches USGS API & runs their model
+│
+└── evaluation/                     # (SHARED) Paper-ready results folder
+    ├── results/                    # Where your graphs are saved
+    │   ├── crypto_money_plot.png
+    │   └── river_money_plot.png
+    ├── crypto_plots.py             # Script to generate your Crypto graph
+    └── final_plots.py              # Script to generate their River graph
