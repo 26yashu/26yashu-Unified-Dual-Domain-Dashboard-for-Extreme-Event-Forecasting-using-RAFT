@@ -13,6 +13,12 @@ This project uses **Retrieval-Augmented Forecasting of Time Series (RAFT)**. Ins
 * **FAISS** (The 10-year historical memory search)
 * **Streamlit** (The live web dashboard)
 
+### 📊 Dataset Links
+* **Bitcoin Data:**
+   [Kaggle - Bitcoin Historical Data (1-Min Intervals)](https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)
+* **River Data:**
+   [Kaggle - USGS Mississippi River (Baton Rouge)](https://www.kaggle.com/datasets/protobioengineering/usgs-mississippi-river-at-baton-rouge-2004-2023)
+
 ## 🚀 How to Run It
 
 **1. Install required packages:**
