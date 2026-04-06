@@ -49,5 +49,5 @@ Click **"Fetch Live Global Data"** in the app to see the real-time predictions!
 
 ## 👥 Creators
 * **Gandlaparthi Yaswanthi** - Financial Domain & System Architecture
-* **Gooty Kumara Snigdha** - Hydrological Domain
+* **Gooty Kummara Snigdha** - Hydrological Domain
 
